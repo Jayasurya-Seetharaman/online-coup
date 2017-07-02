@@ -301,7 +301,7 @@ h2.pagetitle {
 	outline: none;
 }
 .navbar-inner {
-	min-height: 4.75em;
+	min-height: 3.75em;
 }
 .navbar-inverse .navbar-inner {
 	background-repeat: repeat;
@@ -311,7 +311,7 @@ h2.pagetitle {
 	overflow:hidden;
 }
 #menu-main {
-	margin-top: 1.125em;
+	margin-top: 0.9em;
 }
 ul#menu-main > li > a {
 	font-weight: 600;
@@ -324,6 +324,8 @@ ul#menu-main > li > a:hover {
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
+	background-color: #f36f36;
+	color: #fff !important;
 }
 ul#menu-main > li > a:focus {
 	outline:0;
@@ -445,7 +447,9 @@ header .logo {
 
 
 section.section {
-	padding: 100px 0 80px;
+	/*padding: 100px 0 80px;*/
+	/*padding: 0px 0 80px;*/
+	padding: 0px 0 50px;
 }
 section.section h4 {
 	text-align: center;
@@ -488,6 +492,14 @@ section.spacer {
 }
 .spacer.orange,.section.orange {
 	background:#f36f36;
+}
+
+.section.orange-widget{
+	background: #f36f36;
+}
+
+.span4 {
+	padding-top: 10px;
 }
 
 section.spacer.bg2 {
@@ -739,7 +751,7 @@ section#services p {
 section#services .service-box {
 	text-align: center;
 	padding: 20px;
-	
+	bottom: 15px;
 	background:#f36518;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -1022,7 +1034,7 @@ footer {
 	background: #2b2b2b;
 	text-align: center;
 	color: #ddd;
-	padding:50px 0 50px;
+	padding:50px 0 0px;
 }
 
 footer a {
@@ -1712,4 +1724,47 @@ i.icon-white {
 	#contact-form input[type=submit] {
 		width: 100%;
 	}
+}
+
+/*Category */
+.category h3{
+	color: #FFF;
+	/*text-decoration: underline;*/
+}
+
+.category hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid rgba(228, 80, 16, 0.67);
+    border-bottom: 1px solid rgba(228, 80, 16, 0.67);
+}
+
+/*Widget */
+.col-4{
+	width: 370px;
+	float: left;
+    min-height: 1px;
+    margin-left: 30px;
+}
+
+.col-3{
+	width: 360px;
+	float: left;
+    min-height: 1px;
+    margin-left: 0;
+}
+
+.widGet{
+	color: #FFF;
+	font-size: 20px;
+}
+
+.orange-widget hr{
+	margin: 0;
+    border: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+    border-top: 1px solid rgba(228, 80, 16, 0.67);
+    border-bottom: 1px solid rgba(228, 80, 16, 0.67);
 }

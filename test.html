@@ -16,6 +16,25 @@
     Author: BootstrapMade.com
     Author URL: https://bootstrapmade.com
 ======================================================= -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+   $("#demo").hide();
+        $('#hh').show();
+        $("#show").click(function(){
+    $("#hh").show();
+     
+});
+    $("#hh2").click(function(){
+    $("#hh").hide();
+    $("#demo").show();
+});
+});
+
+
+</script>
+
 </head>
 <body>
 
@@ -46,17 +65,15 @@
 
 <!-- Widgets Starts Here -->
 <section class="section orange-widget">
-   <div class="container widGet"><br>
-	<div class="col-4">
+	<div class="span4 widget">
 		<p id="date"></p>
 	</div>
-	<div class="col-4" id="ip">
-		<p>IP</p>
-	</div>
-	<div class="col-3" id="address">
+	<div class="span4">
 		<p>Location</p>
 	</div>
-   </div><hr>	
+	<div class="span4">
+		<p>Weather</p>
+	</div>
 </section>
 
 <!-- Widgets Ends Here-->
@@ -67,17 +84,17 @@
 	<h4>Services</h4>
 
 
-
+<button id="show">Show</button>
 
     <div class="container clearfix">
 	<!-- portfolio filter -->
 	<div class="row">
 		<div id="filters" class="span12">
 			<ul class="clearfix">
-				<li><a href="#" data-filter="*" class="active">
+				<li><a href="#" id="hh1" data-filter="*" class="active">
 				<h5>All</h5>
 				</a></li>
-				<li><a href="#" data-filter=".web">
+				<li><a href="#" id="hh2" data-filter=".web">
 				<h5>Web</h5>
 				</a></li>
 				<li><a href="#" data-filter=".print">
@@ -94,29 +111,63 @@
 		<!-- END PORTFOLIO FILTERING -->
 	</div>
 
-
-
-
-	<div class="row">
-		
-<!--Category Heading starts from here -->
-
-
-
+<div id="demo">
+<div class="row">
+		 
 			<div id="portfolio-wrap">
 				<!-- portfolio item -->
-				<div class="container ">
-						<div class="category" >
-									<h3>FACTS</h3><hr>
-						</div>
-				</div>
-
-				<div class="portfolio-item " >
+                
+				<div class="portfolio-item web">
 					<div class="portfolio">
 						<div class="span3 animated-fast flyIn">
 							<div class="service-box">
 								<img src="img/icons/laptop.png" alt="" />
-								<h2>Scientific Facts</h2>
+								<h2>Web Design</h2>
+                               
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>    
+</div>
+</div>
+
+
+
+   <div id="hh">
+    <div class="row">
+        <div class="container">
+            <div class="" id="test">
+                        <h3>Hello</h3>
+            </div>
+        </div>
+    </div>
+
+
+	<div class="row">
+		 
+			<div id="portfolio-wrap">
+				<!-- portfolio item -->
+                
+				<div class="portfolio-item web">
+					<div class="portfolio">
+						<div class="span3 animated-fast flyIn">
+							<div class="service-box">
+								<img src="img/icons/laptop.png" alt="" />
+								<h2>Web Design</h2>
+                               
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+				<!-- portfolio item -->
+				<div class="portfolio-item print web">
+					<div class="portfolio">
+						<div class="span3 animated flyIn">
+							<div class="service-box">
+								<img src="img/icons/lab.png" alt="" />
+								<h2>Web Test</h2>
 							</div>
 						</div>
 					</div>
@@ -135,18 +186,6 @@
 				</div>
 				<!-- end portfolio item -->
 				<!-- portfolio item -->
-				<div class="portfolio-item print design ">
-					<div class="portfolio">
-						<div class="span3 animated-fast flyIn">
-							<div class="service-box">
-								<img src="img/icons/laptop.png" alt="" />
-								<h2>Web Design</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-				<!-- portfolio item -->
 				<div class="portfolio-item photography print">
 					<div class="portfolio">
 						<div class="span3 animated-slow flyIn">
@@ -158,25 +197,19 @@
 					</div>
 				</div>
 				<!-- end portfolio item -->
-				
+
 				<!-- portfolio item -->
-				<div class="container web">
-						<div class="category" >
-									<h3>WEB DEVELOPMENT</h3><hr>
-						</div>
-				</div>
-				<div class="portfolio-item print web">
+				<div class="portfolio-item print design web">
 					<div class="portfolio">
-						<div class="span3 animated flyIn">
+						<div class="span3 animated-fast flyIn">
 							<div class="service-box">
-								<img src="img/icons/lab.png" alt="" />
-								<h2>Web development</h2>
+								<img src="img/icons/laptop.png" alt="" />
+								<h2>Web Design</h2>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- end portfolio item -->
-				
 				<!-- portfolio item -->
 				<div class="portfolio-item print web">
 					<div class="portfolio">
@@ -216,7 +249,7 @@
 				
 			</div>
 		
-	</div>
+	</div></div>
 </div>
 
 
@@ -310,13 +343,6 @@ var d = new Date();
 document.getElementById("date").innerHTML = d.toDateString();
 </script>
 
-<script>
-	$.get("http://ipinfo.io", function (response) {
-    $("#ip").html("IP: " + response.ip);
-    $("#address").html("Location: " + response.region);
-    $("#details").html(JSON.stringify(response, null, 4));
-}, "jsonp");
-</script>
 
 </body>
 </html>
