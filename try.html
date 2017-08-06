@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap/style.css">
+  
+  
+  <link rel="stylesheet" href="css/bootstrap/font-awesome-4.5.0/font-awesome-4.5.0/css/font-awesome.css">
+  <link rel="stylesheet" href="css/bootstrap/font-awesome-4.5.0/font-awesome-4.5.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    
+    
+    <div class="container">
+       <div class="col-lg-3">
+           <div class="vertical-menu">
+            <div class="panel-group">
+                <div class="panel panel-default">
+                
+                    
+                    <a data-toggle="collapse" href="#collapse1" id="test" class="head">
+                        <i class="fa fa-plus-square" aria-hidden="true"></i> Show
+                    </a>
+                    
+                
+                <div id="collapse1" class="panel-collapse collapse">
+                    <a href="#">One</a>
+                    <a href="#">Two</a>
+                    <a href="#">Three</a>
+                </div>
+                </div>
+            </div>
+           </div> 
+       </div>
+     </div>
+
+   <script src="css/bootstrap/jquery.min.js"></script>
+  <script src="css/bootstrap/bootstrap.min.js"></script>
+
+    <script>
+    
+        $(function(){
+        $('#collapse1').on('hide.bs.collapse', function () {
+            $('#test').html('<i class="fa fa-plus-square" aria-hidden="true"></i> Show');
+        })
+        $('#collapse1').on('show.bs.collapse', function () {
+            $('#test').html('<i class="fa fa-minus-square" aria-hidden="true"></i> Hide');
+        })
+        })
+
+    </script>
+
+  </body>
+</html>

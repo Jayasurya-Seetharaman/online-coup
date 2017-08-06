@@ -16,27 +16,37 @@
     Author: BootstrapMade.com
     Author URL: https://bootstrapmade.com
 ======================================================= -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+<script src="js/jquery.js"></script>
 <script>
-    $(document).ready(function(){
-   $("#demo").hide();
-        $('#hh').show();
-        $("#show").click(function(){
-    $("#hh").show();
-     
-});
-    $("#hh2").click(function(){
-    $("#hh").hide();
-    $("#demo").show();
-});
-});
-
-
+// $(document).ready(function(){
+    
+//         $(".program").hide();
+    
+// });
+function myChange(){
+	alert("test");
+var x = document.getElementsByClassName("program");
+for(var i=0;i<x.length;i++){
+	x[i].style.display = "none";
+}
+}
+function myNext(){
+	alert("next");
+var x = document.getElementsByClassName("program");
+for(var i=0;i<x.length;i++){
+	x[i].style.display = "inline";
+}
+}
 </script>
-
 </head>
-<body>
+
+<style>
+	.program,.food{
+		display: none;
+	}
+</style>
+
+<body onload="">
 
 <!-- navbar -->
 <div class="navbar-wrapper">
@@ -65,15 +75,17 @@
 
 <!-- Widgets Starts Here -->
 <section class="section orange-widget">
-	<div class="span4 widget">
+   <div class="container widGet"><br>
+	<div class="col-4">
 		<p id="date"></p>
 	</div>
-	<div class="span4">
+	<div class="col-4" id="ip">
+		<p>IP</p>
+	</div>
+	<div class="col-3" id="address">
 		<p>Location</p>
 	</div>
-	<div class="span4">
-		<p>Weather</p>
-	</div>
+   </div><hr>	
 </section>
 
 <!-- Widgets Ends Here-->
@@ -84,222 +96,298 @@
 	<h4>Services</h4>
 
 
-<button id="show">Show</button>
+
 
     <div class="container clearfix">
 	<!-- portfolio filter -->
 	<div class="row">
 		<div id="filters" class="span12">
 			<ul class="clearfix">
-				<li><a href="#" id="hh1" data-filter="*" class="active">
-				<h5>All</h5>
+				<li><a href="#" id="pgm">
+				<h5>Programming</h5>
 				</a></li>
-				<li><a href="#" id="hh2" data-filter=".web">
-				<h5>Web</h5>
+				<li><a href="#" id="fd">
+				<h5>Food Calories Meter</h5>
 				</a></li>
-				<li><a href="#" data-filter=".print">
-				<h5>Print</h5>
+				<li><a href="#">
+				<h5>Facts</h5>
 				</a></li>
-				<li><a href="#" data-filter=".design">
-				<h5>Design</h5>
+				<li><a href="#">
+				<h5>Tips and Tricks</h5>
 				</a></li>
-				<li><a href="#" data-filter=".photography">
-				<h5>Photography</h5>
+				<li><a href="#web">
+				<h5>Icons</h5>
+				</a></li>
+				<li><a href="#">
+				<h5>Sports and Games</h5>
+				</a></li>
+				<li><a href="#">
+				<h5>Quotes</h5>
+				</a></li>
+				<li><a href="#">
+				<h5>histor</h5>
 				</a></li>
 			</ul>
 		</div>
 		<!-- END PORTFOLIO FILTERING -->
 	</div>
 
-<div id="demo">
-<div class="row">
-		 
-			<div id="portfolio-wrap">
-				<!-- portfolio item -->
-                
-				<div class="portfolio-item web">
-					<div class="portfolio">
-						<div class="span3 animated-fast flyIn">
-							<div class="service-box">
-								<img src="img/icons/laptop.png" alt="" />
-								<h2>Web Design</h2>
-                               
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>    
-</div>
-</div>
 
-
-
-   <div id="hh">
-    <div class="row">
-        <div class="container">
-            <div class="" id="test">
-                        <h3>Hello</h3>
-            </div>
-        </div>
-    </div>
 
 
 	<div class="row">
-		 
-			<div id="portfolio-wrap">
-				<!-- portfolio item -->
-                
-				<div class="portfolio-item web">
-					<div class="portfolio">
-						<div class="span3 animated-fast flyIn">
-							<div class="service-box">
-								<img src="img/icons/laptop.png" alt="" />
-								<h2>Web Design</h2>
-                               
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-				<!-- portfolio item -->
-				<div class="portfolio-item print web">
-					<div class="portfolio">
-						<div class="span3 animated flyIn">
-							<div class="service-box">
-								<img src="img/icons/lab.png" alt="" />
-								<h2>Web Test</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-				<!-- portfolio item -->
-				<div class="portfolio-item print photography design">
-					<div class="portfolio">
-						<div class="span3 animated-fast flyIn">
-							<div class="service-box">
-								<img src="img/icons/camera.png" alt="" />
-								<h2>Photography</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-				<!-- portfolio item -->
-				<div class="portfolio-item photography print">
-					<div class="portfolio">
-						<div class="span3 animated-slow flyIn">
-							<div class="service-box">
-								<img src="img/icons/basket.png" alt="" />
-								<h2>Ecommerce</h2>		
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end portfolio item -->
+		
+<!--Category Heading starts from here -->
 
-				<!-- portfolio item -->
-				<div class="portfolio-item print design web">
+
+
+			<div id="portfolio-wrap">
+				<!-- portfolio item 
+				<div class="container ">
+						<div class="category" >
+									<h3>FACTS</h3><hr>
+						</div>
+				</div>
+				-->
+			<a href="#">
+				<div class="portfolio-item" id="web">
 					<div class="portfolio">
 						<div class="span3 animated-fast flyIn">
 							<div class="service-box">
-								<img src="img/icons/laptop.png" alt="" />
-								<h2>Web Design</h2>
+								<img src="img/icons/coding.png" alt="" />
+								<h2>Programming</h2>
 							</div>
 						</div>
 					</div>
 				</div>
+			</a>
 				<!-- end portfolio item -->
 				<!-- portfolio item -->
-				<div class="portfolio-item print web">
-					<div class="portfolio">
-						<div class="span3 animated flyIn">
-							<div class="service-box">
-								<img src="img/icons/lab.png" alt="" />
-								<h2>Web development</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end portfolio item -->
-				<!-- portfolio item -->
-				<div class="portfolio-item print photography design">
+			<a href="#">
+				<div class="portfolio-item">
 					<div class="portfolio">
 						<div class="span3 animated-fast flyIn">
 							<div class="service-box">
-								<img src="img/icons/camera.png" alt="" />
-								<h2>Photography</h2>
+								<img src="img/icons/food.png" alt="" />
+								<h2>Food Calories Meter</h2>
 							</div>
 						</div>
 					</div>
 				</div>
+			</a>
 				<!-- end portfolio item -->
 				<!-- portfolio item -->
-				<div class="portfolio-item photography print">
+			<a href="#">
+				<div class="portfolio-item">
+					<div class="portfolio">
+						<div class="span3 animated-fast flyIn">
+							<div class="service-box">
+								<img src="img/icons/fact.png" alt="" />
+								<h2>Facts</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+				<!-- end portfolio item -->
+				<!-- portfolio item -->
+			<a href="#">
+				<div class="portfolio-item">
 					<div class="portfolio">
 						<div class="span3 animated-slow flyIn">
 							<div class="service-box">
-								<img src="img/icons/basket.png" alt="" />
-								<h2>Ecommerce</h2>		
+								<img src="img/icons/trick.png" alt="" />
+								<h2>Tips and Tricks</h2>		
 							</div>
 						</div>
 					</div>
 				</div>
+			</a>
 				<!-- end portfolio item -->
 				
+				<!-- portfolio item 
+				<div class="container web">
+						<div class="category" >
+									<h3>WEB DEVELOPMENT</h3><hr>
+						</div>
+				</div>
+					-->
+			<a href="#">
+				<div class="portfolio-item">
+					<div class="portfolio">
+						<div class="span3 animated flyIn">
+							<div class="service-box">
+								<img src="img/icons/icon.png" alt="" />
+								<h2>Icons</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+				<!-- end portfolio item -->
+				
+				<!-- portfolio item -->
+			<a href="#">
+				<div class="portfolio-item">
+					<div class="portfolio">
+						<div class="span3 animated flyIn">
+							<div class="service-box">
+								<img src="img/icons/sports.png" alt="" />
+								<h2>Sports and Games</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+				<!-- end portfolio item -->
+				<!-- portfolio item -->
+			<a href="#">
+				<div class="portfolio-item">
+					<div class="portfolio">
+						<div class="span3 animated-fast flyIn">
+							<div class="service-box">
+								<img src="img/icons/quote.png" alt="" />
+								<h2>Quotes</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+				<!-- end portfolio item -->
+				<!-- portfolio item -->
+			<a href="#">
+				<div class="portfolio-item">
+					<div class="portfolio">
+						<div class="span3 animated-slow flyIn">
+							<div class="service-box">
+								<img src="img/icons/history-1.png" alt="" />
+								<h2>Today in history</h2>		
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+				<!-- end portfolio item -->
+		<!-- Programming Content Starts Here -->
+			<div class="container program">
+						<div class="category" >
+									<h3>Programming</h3><hr>
+						</div>
 			</div>
+
+				<div class="portfolio-item program">
+					<div class="portfolio">
+						<div class="span3 animated-fast flyIn">
+							<div class="service-box">
+								<img src="img/icons/coding.png" alt="" />
+								<h2>Java</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item program">
+					<div class="portfolio">
+						<div class="span3 animated-fast flyIn">
+							<div class="service-box">
+								<img src="img/icons/coding.png" alt="" />
+								<h2>Python</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item program">
+					<div class="portfolio">
+						<div class="span3 animated-fast flyIn">
+							<div class="service-box">
+								<img src="img/icons/coding.png" alt="" />
+								<h2>NodeJs</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item program">
+					<div class="portfolio">
+						<div class="span3 animated-fast flyIn">
+							<div class="service-box">
+								<img src="img/icons/coding.png" alt="" />
+								<h2>Android</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+		<!-- Programming Content Starts Here -->
+
+		<!-- Food Content Starts Here -->
+			<div class="container food">
+						<div class="category" >
+									<h3>Food</h3><hr>
+						</div>
+			</div>
+
+				<div class="portfolio-item food">
+					<div class="portfolio">
+						<div class="span3 animated-fast flyIn">
+							<div class="service-box">
+								<img src="img/icons/food.png" alt="" />
+								<h2>Idly</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item food">
+					<div class="portfolio">
+						<div class="span3 animated-fast flyIn">
+							<div class="service-box">
+								<img src="img/icons/food.png" alt="" />
+								<h2>Dosa</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item food">
+					<div class="portfolio">
+						<div class="span3 animated-fast flyIn">
+							<div class="service-box">
+								<img src="img/icons/food.png" alt="" />
+								<h2>Kuruma</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item food">
+					<div class="portfolio">
+						<div class="span3 animated-fast flyIn">
+							<div class="service-box">
+								<img src="img/icons/food.png" alt="" />
+								<h2>Chappathi</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+		<!-- Food Content Starts Here -->
+
+
+
+			</div>
+			<!--- End Portfolio wrap -->
+
 		
-	</div></div>
+			
+		
+		
+	</div><!-- Row ends -->
+</div><!-- Clearfix -->
 </div>
 
-
-
-</div>
 </section>
 <!-- end section: services -->
 
-<!-- section: contact 
-<section id="contact" class="section green">
-<div class="container">
-	<h4>Get in Touch</h4>
-	<p>
-		 Reque facer nostro et ius, cu persius mnesarchum disputando eam, clita prompta et mel vidisse phaedrum pri et. Facilisis posidonium ex his. Mutat iudico vis in, mea aeque tamquam scripserit an, mea eu ignota viderer probatus. Lorem legere consetetur ei eum. Sumo aeque assentior te eam, pri nominati posidonium consttuam
-	</p>
-	<div class="blankdivider30">
-	</div>
-	<div class="row">
-		<div class="span12">
-			<div class="cform" id="contact-form">
-				<div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-				<form action="" method="post" role="form" class="contactForm">
-					<div class="row">
-						<div class="span6">
-							<div class="field your-name form-group">
-								<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                <div class="validation"></div>
-							</div>
-							<div class="field your-email form-group">
-								<input type="text" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                                <div class="validation"></div>
-							</div>
-							<div class="field subject form-group">
-								<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                <div class="validation"></div>
-							</div>
-						</div>
-						<div class="span6">
-							<div class="field message form-group">
-								<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                                <div class="validation"></div>
-							</div>
-							<input type="submit" value="Send message" class="btn btn-theme pull-left">
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-		<!-- ./span12 -->
 	</div>
 </div>
 </section>
@@ -323,7 +411,7 @@
 <!-- ./container -->
 </footer>
 <a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bgdark icon-2x"></i></a>
-<script src="js/jquery.js"></script>
+
 <script src="js/jquery.scrollTo.js"></script>
 <script src="js/jquery.nav.js"></script>
 <script src="js/jquery.localscroll-1.2.7-min.js"></script>
@@ -338,11 +426,43 @@
 <script src="contactform/contactform.js"></script>
 
 
+
 <script>
 var d = new Date();
 document.getElementById("date").innerHTML = d.toDateString();
 </script>
 
+<script>
+	$.get("http://ipinfo.io", function (response) {
+    $("#ip").html("IP: " + response.ip);
+    $("#address").html("Location: " + response.region);
+    $("#details").html(JSON.stringify(response, null, 4));
+}, "jsonp");
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#btn").click(function(){
+        $("#tog").toggle(2000);
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#pgm").click(function(){
+		$(".program").toggle(1000);
+		$(".food").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#fd").click(function(){
+		$(".food").show(1000);
+		$(".program").hide();
+    });
+});
+</script>
 
 </body>
 </html>

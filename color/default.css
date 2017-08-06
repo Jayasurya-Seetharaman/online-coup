@@ -56,7 +56,8 @@ ul#menu-main > li > a:focus,ul#menu-main > li > a:active, ul#menu-main > li > a.
 /* works */
 #filters ul li a:hover h5, #filters ul li a.active h5 {
 	background: #1BAC91;
-	border-color: #1BAC91;
+    border-color: #f3f3f3;
+    border-radius: 4px;
 }
 
 .portfolio .portfolio-overlay {

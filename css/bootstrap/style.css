@@ -1,0 +1,141 @@
+.footer {
+    background: #2b2b2b;
+    text-align: center;
+    color: #ddd;
+    padding: 50px 0 0px;
+}
+
+.footer ul.social-networks {
+    list-style: none;
+}
+
+.footer ul.social-networks li {
+    display: inline;
+}
+
+.footer ul.social-networks li a {
+    color: #5e5e5e;
+    margin: 0 5px;
+}
+
+.footer ul.social-networks li i.icon-bgdark {
+    background: #414141;
+    color: #656565;
+}
+
+.icon-circled.icon-2x {
+    width: 48px !important;
+    height: 48px !important;
+    line-height: 48px !important;
+}
+
+i.icon-circled {
+    display: inline-block;
+    border-radius: 1000px !important;
+    -moz-border-radius: 1000px !important;
+    -webkit-border-radius: 1000px !important;
+    -o-border-radius: 1000px !important;
+    -ms-border-radius: 1000px !important;
+    text-align: center;
+    width: 24px !important;
+    height: 24px !important;
+    line-height: 24px !important;
+}
+
+.footer ul.social-networks li a i.fa-instagram:hover {
+    background: #ba7b3d;
+    color: #fff;
+}
+
+.footer ul.social-networks li a i.fa-twitter:hover {
+    background: #5ad2eb;
+    color: #fff;
+}
+
+.footer ul.social-networks li a i.fa-youtube:hover {
+    background: #bb0000;
+    color: #fff;
+}
+
+.footer ul.social-networks li a i.fa-facebook:hover {
+    background: #3b5998;
+    color: #fff;
+}
+
+.copyright{
+    padding: 15px;
+    margin: 0px !important;
+    margin-left: 35px !important;
+    text-align: center;
+}
+
+.para{
+    text-align: justify !important;
+}
+
+.image{
+    text-align: center;
+    padding: 5px;
+}
+
+.para p{
+    line-height: 1.6em !important;
+    margin: 0 0 10px 0 !important;
+}
+
+body {
+    background: #fff;
+    color: #444;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Arial', sans-serif;
+}
+
+/*Side Menu Starts here*/
+.vertical-menu{
+    margin-bottom: 15px;
+}
+
+.vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    border-bottom: 1px solid #e6dede;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.head {
+    background-color: #f36f36; /* Add a green color to the "active/current" link */
+    color: white;
+}
+
+/* MENUBAR Starts here */
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #f36f36;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #FFF;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+   
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	background-color: #f36f36;
+	color: #fff !important;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #FFF !important;
+}
